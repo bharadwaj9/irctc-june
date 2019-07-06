@@ -1,0 +1,22 @@
+<project name="irctc"  default="init"    basedir="." >
+
+
+
+<filelist id="abc"   dir="src" files="abc.txt"/>
+
+<target name="init" >
+
+<copy todir="build" >
+
+<filelist    refid="abc" />
+
+</copy>
+
+
+
+</target>
+
+
+
+
+</project>

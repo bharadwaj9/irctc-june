@@ -1,0 +1,8 @@
+<project name="Sample" default="info">
+<target name="info">
+<exec executable="/bin/bash">
+<arg value="Call.sh"/>
+<arg value="/tmp"/>
+</exec>
+</target>
+</project>

@@ -1,0 +1,11 @@
+<project name="abc" default="help" basedir="." >
+
+<target name="help">
+  <exec executable="cmd">
+    <arg value="/c"/>
+    <arg value="E:\svnbackup.bat"/>
+    <arg value="-p"/>
+  </exec>
+</target>
+
+</project>

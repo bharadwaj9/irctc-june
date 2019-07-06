@@ -1,0 +1,17 @@
+<project name="test" default="pqc" >
+
+<property name="dist" value="dist"/>
+
+<target  name="zip">
+<tar destfile="${dist}/manual.tar"
+     basedir="src"/>
+	 
+</target> 
+<target  name="pqc" depends="zip">
+<untar src="${dist}/manual.tar" dest="${dist}"/>
+	 
+</target> 
+
+</project>
+
+

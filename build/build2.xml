@@ -1,0 +1,29 @@
+<project name="irctc"  default="init"    basedir="." >
+
+<patternset id="test">
+
+  <include name="**/*.java"/>
+  <exclude name="**/*.txt"/>
+
+</patternset>
+
+<target name="init" >
+
+<!--<copy file="build1.xml"    tofile="abc.txt" /> 
+<copy file="build1.xml"    todir="abc.txt" />-->
+<copy   todir="build" >
+
+<fileset dir="src" >
+<patternset refid="test" />
+
+</fileset>
+
+
+</copy>
+
+</target>
+
+
+
+
+</project>

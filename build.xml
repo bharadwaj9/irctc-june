@@ -1,0 +1,28 @@
+<project name="irctc"  default="package"    basedir="." >
+
+
+<target name="clean"  >
+<delete dir="build" />
+
+</target>
+
+<target name="compile"  depends="init">
+<javac srcdir="src"  destdir="build/classes" />
+
+</target>
+
+<target name="package"  depends="compile">
+<jar destfile="build/irctc.jar" basedir="build/classes" />
+<ant antfile="build2.xml" target="init"/>
+</target>
+
+<target name="init" depends="clean"  >
+<mkdir dir="build" />
+<mkdir dir="build/classes" />
+
+</target>
+
+
+
+
+</project>

@@ -1,0 +1,26 @@
+<project name="irctc"  default="init"    basedir="." >
+
+
+<fileset dir="test" id="abc">
+  <include name="**/*.xml"/>
+</fileset>
+
+<target name="init" >
+
+<!--<move file="abc.txt"    tofile="xyz.txt" /> 
+<move file="xyz.txt"    todir="build" />-->
+
+<move todir="build" >
+
+<fileset refid="abc" />
+
+</move>
+
+
+
+</target>
+
+
+
+
+</project>
